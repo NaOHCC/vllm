@@ -703,7 +703,7 @@ class LLMEngine:
         Returns RequestOutputs that can be returned to the client.
         """
 
-        now = time.time()
+        now = time.perf_counter()
 
         # Organize outputs by [sequence group][step] instead of
         # [step][sequence group].
